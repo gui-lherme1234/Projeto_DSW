@@ -53,6 +53,23 @@
 /*RESET*/
 /*-------------------*/
 
+.h1,
+.h2,
+.h3{color:#1E90FF;
+    line-height:40px;
+}
+
+.h1{
+    font-size: var(--fs-1);
+}
+
+.h2{
+    font-size: var(--fs-2);
+}
+
+.h3{
+    font-size: var(--fs-6);
+}
 *{
     margin:0;
     padding:0;
@@ -137,7 +154,7 @@ button{
     position:fixed;
     top:0;
     right:-300px;
-    background: var(--eerie-black);
+    background: black;
     width: 100%;
     max-width: 300px;
     height:100%;
@@ -168,6 +185,10 @@ button{
     --ionicon-stroke-width: 80px;
 }
 
+ion-icon.reorder-three-outline  {
+    color: black;
+}
+
 .navbar-list{
     border-top: 1px solid hsla(0, 0%, 100%, 0.1);
     margin-bottom: 30px;
@@ -183,7 +204,7 @@ button{
 }
 
 .navbar-link:hover{
-    color:var(--citrine);
+    color:#1E90FF;
 }
 
 .navbar-social-list{
@@ -200,7 +221,7 @@ button{
 }
 
 .navbar-social-link:hover{
-    color:var(--citrine);
+    color:#1E90FF;
 }
 
 .overlay{
@@ -216,3 +237,37 @@ button{
     pointer-events: all;
 }
 
+/*-------------------*/
+/*Banner*/
+/*-------------------*/
+
+.hero{
+    background: url('../img/Design\ sem\ nome\ \(1\).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-block: var(--section-padding);
+}
+
+.hero-content{
+    margin-top: 60px;
+}
+
+.hero-subtitle{
+    color: white;
+    font-size: var(--fs-4);
+    font-weight: var(--fw-700);
+    margin-bottom: 20px;
+}
+
+.hero-title{
+    margin-bottom: 30px; 
+}
+
+.hero-title > strong{
+    color:black;
+}
